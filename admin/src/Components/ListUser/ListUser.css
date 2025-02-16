@@ -1,0 +1,118 @@
+.listuser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 50px;
+    margin: 35px 30px;
+    border-radius: 6px;
+    background: white;
+}
+.search-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+}
+.search-icon{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+    padding: 8px;
+    border-radius: 4px;
+}
+.search-icon input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.search-icon input:focus{
+    outline: none;
+    border: none;
+}
+.search-icon img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.listuser-format-main{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
+}
+.listuser-format{
+    align-items: center;
+    font-weight: 500;
+}
+.listuser-product-icon{
+    height: 80px;
+}
+
+.listuser-remove-icon{
+    width: 18px;
+    cursor: pointer;
+    margin: auto;
+}
+.listuser-allproduct{
+    overflow: auto;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+@media(max-width: 1280px){
+    .search-list{
+        gap: 100px;
+    }
+    .search-icon{
+        width: 250px;
+        height: 35px;
+    }
+    .search-icon input{
+        width: 220px;
+        height: 35px;
+    }
+    .search-icon img{
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+@media(max-width: 800px){
+    .listuser{
+        box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+    .listuser-format-main{
+        padding: 14px 0px;
+        color: #454545;
+        font-size: 12px;
+    }
+    .listuser-product-icon{
+        height: 60px;
+    }
+    .listuser-remove-icon{
+        width: 14px;
+    }
+}
