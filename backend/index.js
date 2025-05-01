@@ -8,7 +8,7 @@ const { error } = require("console");
 const bcrypt = require('bcrypt');
 
 
-const port = 4000; 
+const port = process.env.PORT || 4000; 
 const app = express();
 
 app.use(express.json());
